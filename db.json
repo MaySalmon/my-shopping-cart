@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Rabik game",
+      "description": "bla bla",
+      "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+      "price": 299
+    },
+    {
+      "id": 2,
+      "name": "Rabik game",
+      "description": "bla bla",
+      "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+      "price": 299
+    },
+    {
+      "id": 3,
+      "name": "Rabik game",
+      "description": "bla bla",
+      "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+      "price": 299
+    },
+    {
+      "id": 4,
+      "name": "Rabik game",
+      "description": "bla bla",
+      "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+      "price": 299
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "productId": 2,
+      "productName": "",
+      "qty": 1,
+      "price": 0
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Rabik game",
+        "description": "bla bla",
+        "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+        "price": 299
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Rabik game",
+        "description": "bla bla",
+        "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+        "price": 299
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Rabik game",
+        "description": "bla bla",
+        "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+        "price": 299
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Rabik game",
+        "description": "bla bla",
+        "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+        "price": 299
+      },
+      "id": 5
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Rabik game",
+        "description": "bla bla",
+        "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+        "price": 299
+      },
+      "id": 6
+    },
+    {
+      "product": {
+        "id": 4,
+        "name": "Rabik game",
+        "description": "bla bla",
+        "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+        "price": 299
+      },
+      "id": 7
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Rabik game",
+        "description": "bla bla",
+        "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+        "price": 299
+      },
+      "id": 8
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Rabik game",
+        "description": "bla bla",
+        "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+        "price": 299
+      },
+      "id": 9
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Rabik game",
+        "description": "bla bla",
+        "imageurl": "https://6lli539m39y3hpkelqsm3c2fg-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Rubiks_Cube_shutterstock_271810067-675x380.jpg",
+        "price": 299
+      },
+      "id": 10
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

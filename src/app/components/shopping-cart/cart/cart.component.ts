@@ -48,6 +48,7 @@ export class CartComponent implements OnInit {
          price: product.price
        })
     }
+
     
 
     this.cartTotal = 0;
