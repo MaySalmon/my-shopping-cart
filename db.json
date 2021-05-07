@@ -128,6 +128,16 @@
         "price": 199
       },
       "id": 6
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Surface Laptop 4",
+        "description": "bla bla",
+        "imageurl": "https://cdn.shopify.com/s/files/1/1565/0259/products/lpt4_large.jpg?v=1477467335",
+        "price": 599
+      },
+      "id": 7
     }
   ],
   "posts": [

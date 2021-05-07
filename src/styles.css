@@ -30,3 +30,13 @@
     color: pink;
     cursor: pointer;
 }
+
+
+.guest-form-card{
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.guest-form-card label{
+    font-size: small;
+}
