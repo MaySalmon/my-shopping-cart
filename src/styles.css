@@ -40,3 +40,14 @@
 .guest-form-card label{
     font-size: small;
 }
+
+.additem button{
+    background-color: rgb(68, 10, 2);
+    
+}
+
+.additem{
+    position: relative;
+    float: right;
+    border: 1px solid;
+}
