@@ -5,3 +5,5 @@ export const baseUrl = environment.production ? 'https://api.shoppingcart.com' :
 export const productsUrl = baseUrl + '/products'
 
 export const cartUrl = baseUrl + '/cart'
+
+export const wishList = baseUrl + '/wishlist'
