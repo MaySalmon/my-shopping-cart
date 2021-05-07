@@ -19,7 +19,7 @@ export class CartComponent implements OnInit {
   ];
 
   cartTotal = 0
-
+  cartTotalNum=0
 
   constructor( private msg: MessangerService,private cartService: CartService) { }
   
@@ -46,9 +46,17 @@ export class CartComponent implements OnInit {
  
   calcCartTotal(){
     this.cartTotal =0
+    if(this.cartItems.length === 0)
+    {
+      this.cartTotalNum=0;
+    }
+    else{
+      this.cartTotalNum++;
+    }
     this.cartItems.forEach(item => {
       this.cartTotal += (item.qty * item.price)
     })
+    
   }
   
 
