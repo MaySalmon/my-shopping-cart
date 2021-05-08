@@ -11,7 +11,7 @@ import { MessangerService } from 'src/app/services/messanger.service'
 })
 export class NewitemComponent implements OnInit {
   
-  registerForm: FormGroup;
+  @Input()registerForm: FormGroup;
   
 
   constructor(private msg: MessangerService, private productService: ProductService, private builder: FormBuilder) { }
@@ -23,18 +23,25 @@ export class NewitemComponent implements OnInit {
   buildForm(){
     this.registerForm= this.builder.group({
       productname:['', Validators.required],
-      description:['', [Validators.required, Validators.email]],
+      description:['', Validators.required],
       price:['', Validators.required],
       image:['', Validators.required]
       
     }) 
   }
-  newItem= new Product(8,"","",2,"");
-
+   newItem= new Product(8,"dddd","",2,"");
+  // newP: Product;
   addItem(){
     console.log(this.registerForm);
+    document.write(this.registerForm.get('price').value);
+    //document.write(this.newItem.id);
+    console.log(this.newItem.id=this.registerForm.get('productname').value);
+    // this.newP.description="hiii";
+    // this.newP.imageurl="df";
+    // this.newP.name="df";
+    // this.newP.price=22;
     this.productService.addNewProduct(this.newItem).subscribe(() => {
-      this.msg.sendMsg(this.newItem)
+      //  this.msg.sendMsg(this.newItem)
     })
     
   }
