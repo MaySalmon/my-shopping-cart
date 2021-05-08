@@ -3,6 +3,8 @@
     <div class="card-body"> 
       <p class="card-text"><strong>{{ productItem.name }}</strong></p>
       <p class="card-text">{{ productItem.description }}</p>
+      <p class="card-text">{{ productItem.price | currency:'USD' }}</p>
+
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
           <button type="button" class="btn btn-sm btn-primary product-btn" (click)="deleteItem()">Delete Item</button>
