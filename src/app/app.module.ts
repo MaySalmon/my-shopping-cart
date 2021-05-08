@@ -20,7 +20,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AdminItemComponent } from './components/admin/admin-item/admin-item.component';
-import { NewitemComponent } from './components/newitem/newitem.component';
+import { NewitemComponent } from './components/admin/newitem/newitem.component';
+import { EdititemComponent } from './components/admin/edititem/edititem.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { NewitemComponent } from './components/newitem/newitem.component';
     AdminComponent,
     AdminItemComponent,
     NewitemComponent,
+    EdititemComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,19 +1,16 @@
-
-<div class="additem">
-    <button type="button" class="btn btn-sm btn-secondary product-btn"  [routerLink]="['/admin']">Back To Admin</button>
-</div>
-
+<h1>ho</h1>
+<!-- 
 <div class="row">
     <div class="col-md-4 offset-md-4">
         <div class="guest-form-card card">
 
             <div class="card-header text-center">
-                <h2>Add New Item</h2>
+                <h2>Edit Item</h2>
             </div>
 
             <div class="card-body">
                 
-                <form [formGroup]="registerForm" (ngSubmit)="addItem()" >
+                <form [formGroup]="registerForm" >
                     <div class="form-group">
                         <label for="productname">Product Name</label>
                         <input id="productname" class="ml-2 form-control" [ngClass]="{ 'is-invalid': registerForm.get('productname').touched && registerForm.get('productname').invalid }" formControlName="productname">
@@ -21,7 +18,7 @@
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <input id="description" class="ml-2 form-control" [ngClass]="{ 'is-invalid': registerForm.get('description').touched && registerForm.get('description').invalid }" formControlName="description">
+                        <input id="description" class="ml-2 form-control" maxlength=30 [ngClass]="{ 'is-invalid': registerForm.get('description').touched && registerForm.get('description').invalid }" formControlName="description">
                         <span class="invalid-feedback">Description can't be blank.</span>
                     </div>
                     <div class="form-group">
@@ -36,11 +33,11 @@
                     </div>
                   
 
-                    <button class="btn btn-primary btn-block" [disabled]="registerForm.get('productname').invalid || registerForm.get('description').invalid  || registerForm.get('image').invalid || registerForm.get('price').invalid">Add Item</button>    
+                    <button class="btn btn-primary btn-block" [disabled]="registerForm.get('productname').invalid || registerForm.get('description').invalid  || registerForm.get('image').invalid || registerForm.get('price').invalid">Save Changes</button>    
                 
                 </form>
             </div>
         </div>
      
     </div>
-</div>
+</div> -->

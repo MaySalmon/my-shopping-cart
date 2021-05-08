@@ -29,18 +29,15 @@ export class NewitemComponent implements OnInit {
       
     }) 
   }
-   newItem= new Product(0,"","",0,"");
-  // newP: Product;
+   newItem= new Product(0,"","",0,""); //default parameters
+ 
   addItem(){
     
     this.newItem.name=this.registerForm.get('productname').value;
     this.newItem.description=this.registerForm.get('description').value;
     this.newItem.price=this.registerForm.get('price').value;
     this.newItem.imageurl=this.registerForm.get('image').value;
-    // this.newP.description="hiii";
-    // this.newP.imageurl="df";
-    // this.newP.name="df";
-    // this.newP.price=22;
+    
     this.productService.addNewProduct(this.newItem).subscribe(() => {
       //  this.msg.sendMsg(this.newItem)
     })
