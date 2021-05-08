@@ -41,4 +41,11 @@ export class CartService {
   addProductToCart(product: Product): Observable<any>{
     return this.http.post(cartUrl, { product });
   }
+
+  deleteCartItems(){
+    for (let i=0; i<cartUrl.length;i++){
+    this.http.delete(cartUrl + '/' + i)
+        .subscribe();
+    }
+  }
 }

@@ -3,7 +3,7 @@ import { Form, FormControl, FormGroup, FormBuilder, Validators } from '@angular/
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service'
 import { MessangerService } from 'src/app/services/messanger.service'
-
+import { Router } from '@angular/router'
 @Component({
   selector: 'app-newitem',
   templateUrl: './newitem.component.html',
@@ -14,7 +14,7 @@ export class NewitemComponent implements OnInit {
   @Input()registerForm: FormGroup;
   
 
-  constructor(private msg: MessangerService, private productService: ProductService, private builder: FormBuilder) { }
+  constructor(private router:Router,private msg: MessangerService, private productService: ProductService, private builder: FormBuilder) { }
   
   ngOnInit(){
     this.buildForm();
@@ -41,7 +41,7 @@ export class NewitemComponent implements OnInit {
     this.productService.addNewProduct(this.newItem).subscribe(() => {
       //  this.msg.sendMsg(this.newItem)
     })
-    
+    this.router.navigate(['/shop']);
   }
   
 }

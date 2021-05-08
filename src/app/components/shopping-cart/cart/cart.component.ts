@@ -3,6 +3,7 @@ import { MessangerService } from 'src/app/services/messanger.service'
 import { Product } from 'src/app/models/product';
 import { CartService } from 'src/app/services/cart.service';
 import { CartItem } from 'src/app/models/cart-item'
+import { Router } from '@angular/router'
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -21,7 +22,7 @@ export class CartComponent implements OnInit {
   cartTotal = 0
   cartTotalNum=0
 
-  constructor( private msg: MessangerService,private cartService: CartService) { }
+  constructor(private router:Router, private msg: MessangerService,private cartService: CartService) { }
   
   ngOnInit() {
     this.handleSubscription();
@@ -58,6 +59,12 @@ export class CartComponent implements OnInit {
     })
     
   }
+
+  clearcart(){
+    this.cartService.deleteCartItems();
+    this.router.navigate(['/']);
+  }
+
   
 
 }

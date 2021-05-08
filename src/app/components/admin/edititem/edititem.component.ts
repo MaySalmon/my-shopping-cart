@@ -3,7 +3,7 @@ import { Form, FormControl, FormGroup, FormBuilder, Validators } from '@angular/
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service'
 import { MessangerService } from 'src/app/services/messanger.service'
-import { ActivatedRoute } from '@angular/router'
+import { ActivatedRoute,Router } from '@angular/router'
 import { productsUrl } from 'src/app/config/api';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
@@ -22,7 +22,7 @@ export class EdititemComponent implements OnInit {
 
   @Input()clickedProduct= new Product(0,"","",0,"");
   
-  constructor(private route: ActivatedRoute, private msg: MessangerService, private productService: ProductService, private builder: FormBuilder) { }
+  constructor(private router:Router,private route: ActivatedRoute, private msg: MessangerService, private productService: ProductService, private builder: FormBuilder) { }
  
   ngOnInit() {
     let id= parseInt(this.route.snapshot.paramMap.get('id'));
@@ -62,7 +62,7 @@ export class EdititemComponent implements OnInit {
     this.clickedProduct.imageurl = this.registerForm.get('image').value;
     this.clickedProduct.price = this.registerForm.get('price').value;
     this.productService.updatePost( this.clickedProduct.id,this.clickedProduct);
-  
+    this.router.navigate(['/shop']);
   }
 }
 
