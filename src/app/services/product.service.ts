@@ -27,4 +27,12 @@ export class ProductService {
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(productsUrl);
   }
+
+  deleteItemFromList(product: Product): Observable<any>{
+    console.log('deleteee');
+    return this.http.delete(productsUrl + '/' + product.id);
+    }
+  
+
 }
+

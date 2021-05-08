@@ -26,5 +26,7 @@ export class AdminComponent implements OnInit {
   this.productList = products;
   
   })
+
 }
+
 }

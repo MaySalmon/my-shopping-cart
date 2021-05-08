@@ -12,7 +12,7 @@ export class ProductItemComponent implements OnInit {
 
 
   @Input()productItem: Product;
-  @Input()addedToWishList: boolean;
+  @Input()addedToWishList: boolean=false;
 
   constructor(private msg: MessangerService, private cartService: CartService, private wishListService: WishlistService ) { }
 
