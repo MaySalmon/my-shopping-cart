@@ -11,7 +11,7 @@ import { ProductService } from 'src/app/services/product.service'
 export class AdminItemComponent implements OnInit {
   
   @Input()productItem: Product;
-  
+ productList: Product[]=[];
   constructor(private msg: MessangerService ,private productService: ProductService) { }
 
   ngOnInit(): void {
@@ -21,7 +21,9 @@ export class AdminItemComponent implements OnInit {
   deleteItem(){
     this.productService.deleteItemFromList(this.productItem).subscribe(()=>{
     });
+    
   }
+
   
 }
 

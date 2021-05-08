@@ -33,6 +33,9 @@ export class ProductService {
     return this.http.delete(productsUrl + '/' + product.id);
     }
   
-
+   addNewProduct(product: Product): Observable<any>{
+    console.log('added new');
+    return this.http.post(productsUrl,{product});
+    }
 }
 

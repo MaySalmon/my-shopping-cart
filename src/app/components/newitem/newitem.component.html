@@ -1,0 +1,42 @@
+
+<div class="additem">
+    <button type="button" class="btn btn-sm btn-secondary product-btn"  [routerLink]="['/admin']">Back To Admin</button>
+</div>
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="guest-form-card card">
+
+            <div class="card-header text-center">
+                <h2>Add New Item</h2>
+            </div>
+
+            <div class="card-body">
+                
+                <form [formGroup]="registerForm" (ngSubmit)="addItem()" >
+                    <div class="form-group">
+                        <label for="productname">Product Name</label>
+                        <input id="productname" class="ml-2 form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input id="description" class="ml-2 form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" class="ml-2 form-control">
+                    </div>
+                    <div class=" form-group">
+                        <label for="image">Image (url)</label>
+                        <input id="password" class=" ml-2 form-control" >
+                    </div>
+                  
+
+                    <button class="btn btn-primary btn-block" >Add Item</button>    
+                
+                </form>
+            </div>
+        </div>
+     
+    </div>
+</div>

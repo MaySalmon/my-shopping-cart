@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/services/product.service'
 })
 export class AdminComponent implements OnInit {
 
-
+  closeResult: string;
   productList: Product[] = []
   wishlist: number[]= []
 
@@ -28,5 +28,6 @@ export class AdminComponent implements OnInit {
   })
 
 }
+
 
 }
