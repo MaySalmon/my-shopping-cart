@@ -38,6 +38,13 @@ export class ProductService {
         return this.http.get<Product[]>(productsUrl +"/" + id);
     }
       
+
+    updatePost(id: number,product: Product ) {
+      console.log(product);
+      this.http.put(productsUrl + '/' + id , product).subscribe(data => {
+        console.log(data);
+      });
+    }
       
      
     }

@@ -4,22 +4,22 @@
       "id": 1,
       "name": "Headphones",
       "description": "Leaf Bass Wireless Headphones‏",
-      "imageurl": "https://5.imimg.com/data5/JU/TI/MY-9938506/selection_388-500x500.png",
-      "price": 199
+      "price": 199,
+      "imageurl": "https://5.imimg.com/data5/JU/TI/MY-9938506/selection_388-500x500.png"
     },
     {
       "id": 2,
-      "name": "Wireless Speakers",
-      "description": "bla bla",
-      "imageurl": "https://d287ku8w5owj51.cloudfront.net/images/products/hero/creative-t15-wireless/hero-creative-t15-wireless.jpg?width=750",
-      "price": 599
+      "name": "Creative T15 Wireless",
+      "description": "Built for impressive, high-qua",
+      "price": 500,
+      "imageurl": "https://d287ku8w5owj51.cloudfront.net/images/products/hero/creative-t15-wireless/hero-creative-t15-wireless.jpg?width=750"
     },
     {
       "id": 3,
-      "name": "Surface Laptop 4",
-      "description": "bla bla",
-      "imageurl": "https://cdn.shopify.com/s/files/1/1565/0259/products/lpt4_large.jpg?v=1477467335",
-      "price": 599
+      "name": "Macbook pro 15",
+      "description": "touch bar and touch id",
+      "price": 1000,
+      "imageurl": "https://cdn.shopify.com/s/files/1/1565/0259/products/lpt4_large.jpg?v=1477467335"
     },
     {
       "id": 4,
@@ -58,9 +58,9 @@
     },
     {
       "id": 9,
-      "name": "punch",
-      "description": "the cutest cat in the world",
-      "price": 50,
+      "name": "Samsung TV",
+      "description": "the best tv in the world",
+      "price": 2000,
       "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtBkBYUUew-ulrLwfJaJB0EKHW0m1zThyZWw&usqp=CAU"
     }
   ],
@@ -95,6 +95,26 @@
         "price": 599
       },
       "id": 3
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Surface Laptop 4",
+        "description": "bla bla",
+        "imageurl": "https://cdn.shopify.com/s/files/1/1565/0259/products/lpt4_large.jpg?v=1477467335",
+        "price": 599
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Surface Laptop 4",
+        "description": "bla bla",
+        "imageurl": "https://cdn.shopify.com/s/files/1/1565/0259/products/lpt4_large.jpg?v=1477467335",
+        "price": 599
+      },
+      "id": 5
     }
   ],
   "posts": [

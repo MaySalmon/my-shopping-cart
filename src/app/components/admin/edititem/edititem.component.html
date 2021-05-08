@@ -1,5 +1,8 @@
-<h1>ho</h1>
-<!-- 
+
+<div class="additem">
+    <button type="button" class="btn btn-sm btn-secondary product-btn"  [routerLink]="['/admin']">Back To Admin</button>
+</div>
+
 <div class="row">
     <div class="col-md-4 offset-md-4">
         <div class="guest-form-card card">
@@ -10,7 +13,7 @@
 
             <div class="card-body">
                 
-                <form [formGroup]="registerForm" >
+                <form [formGroup]="registerForm" (ngSubmit)="saveChanges()">
                     <div class="form-group">
                         <label for="productname">Product Name</label>
                         <input id="productname" class="ml-2 form-control" [ngClass]="{ 'is-invalid': registerForm.get('productname').touched && registerForm.get('productname').invalid }" formControlName="productname">
@@ -33,11 +36,11 @@
                     </div>
                   
 
-                    <button class="btn btn-primary btn-block" [disabled]="registerForm.get('productname').invalid || registerForm.get('description').invalid  || registerForm.get('image').invalid || registerForm.get('price').invalid">Save Changes</button>    
+                    <button class="btn btn-primary btn-block" [disabled]="registerForm.get('productname').invalid || registerForm.get('description').invalid  || registerForm.get('image').invalid || registerForm.get('price').invalid" >Save Changes</button>    
                 
                 </form>
             </div>
         </div>
      
     </div>
-</div> -->
+</div> 
