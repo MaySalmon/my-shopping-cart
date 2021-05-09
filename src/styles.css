@@ -63,3 +63,14 @@ text-center{
     text-align: center;
   
 }
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td {
+    border: 1px solid #000;
+    width: 150px;
+  }
+  
