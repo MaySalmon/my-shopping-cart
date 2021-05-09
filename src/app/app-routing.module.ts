@@ -7,6 +7,8 @@ import { PageNotFoundComponent } from './components/shared/page-not-found/page-n
 import { AdminComponent } from './components/admin/admin.component'
 import { NewitemComponent } from './components/admin/newitem/newitem.component'
 import { EdititemComponent } from './components/admin/edititem/edititem.component'
+import { StateComponent } from './components/shared/state/state.component'
+
 const routes: Routes = [
     { path: '', redirectTo: '/shop', pathMatch: 'full'},
     { path: 'login', component: LoginComponent },
@@ -15,7 +17,10 @@ const routes: Routes = [
     { path: 'admin', component: AdminComponent },
     { path: 'newitem', component: NewitemComponent},
     { path: 'edititem/:id', component: EdititemComponent},
+    { path: 'state', component: StateComponent},
     { path: '**', component: PageNotFoundComponent },
+
+    
 ]
 
 @NgModule({

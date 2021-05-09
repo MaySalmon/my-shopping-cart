@@ -52,3 +52,14 @@
     float: right;
     border: 1px solid;
 }
+
+.display-4 fw-normal{
+    text-align: center;
+    position:relative;
+
+}
+
+text-center{
+    text-align: center;
+  
+}

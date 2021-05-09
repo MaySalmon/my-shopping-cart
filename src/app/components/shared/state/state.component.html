@@ -1,0 +1,11 @@
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal">State</h1>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4" *ngFor="let product of productList">
+        <app-state-items [productItem]= "product" ></app-state-items>
+    </div>
+</div>
+ 

@@ -22,6 +22,8 @@ import { AdminComponent } from './components/admin/admin.component';
 import { AdminItemComponent } from './components/admin/admin-item/admin-item.component';
 import { NewitemComponent } from './components/admin/newitem/newitem.component';
 import { EdititemComponent } from './components/admin/edititem/edititem.component';
+import { StateComponent } from './components/shared/state/state.component';
+import { StateItemsComponent } from './components/shared/state/state-items/state-items.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { EdititemComponent } from './components/admin/edititem/edititem.componen
     AdminItemComponent,
     NewitemComponent,
     EdititemComponent,
+    StateComponent,
+    StateItemsComponent,
   ],
   imports: [
     BrowserModule,
