@@ -1,6 +1,9 @@
 <div class="row">
-    <div class="additem">
+    <!-- <div class="additem">
         <button type="button" class="btn btn-sm btn-secondary product-btn"  [routerLink]="['/newitem']">Add New Item</button>
+    </div> -->
+    <div class="additem">
+        <button type="button" class="btn btn-sm btn-secondary product-btn" (click)="open(content)">Add New Item</button>
     </div>
     <div class="row">
 
@@ -10,3 +13,44 @@
     </div>
 </div>
 
+
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Add New Item</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <form  [formGroup]="registerForm" (ngSubmit)="addItem()" >
+            <div class="form-group">
+                <label for="productname">Product Name</label>
+                <input id="productname" class="ml-2 form-control" [ngClass]="{ 'is-invalid': registerForm.get('productname').touched && registerForm.get('productname').invalid }" formControlName="productname">
+                <span class="invalid-feedback">Name can't be blank.</span>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input id="description" class="ml-2 form-control" maxlength=30 [ngClass]="{ 'is-invalid': registerForm.get('description').touched && registerForm.get('description').invalid }" formControlName="description">
+                <span class="invalid-feedback">Description can't be blank.</span>
+           
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" id="price" class="ml-2 form-control" [ngClass]="{ 'is-invalid': registerForm.get('price').touched && registerForm.get('price').invalid }" formControlName="price">
+                <span class="invalid-feedback">Price can't be blank.</span>
+           
+            </div>
+            <div class=" form-group">
+                <label for="image">Image (url)</label>
+                <input id="image" class=" ml-2 form-control" [ngClass]="{ 'is-invalid': registerForm.get('image').touched && registerForm.get('image').invalid }" formControlName="image">
+                <span class="invalid-feedback">Image can't be blank.</span>
+            
+            </div>
+          
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-block"(click)="modal.close('Save click')">Add Item</button>    
+            </div>
+        </form>
+    </div>
+  </ng-template>
