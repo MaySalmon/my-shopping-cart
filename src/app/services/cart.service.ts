@@ -44,7 +44,7 @@ export class CartService {
 
   deleteCartItems(){
     for (let i=0; i<cartUrl.length;i++){
-    this.http.delete(cartUrl + '/' + i)
+    this.http.delete(cartUrl + '/' +i)
         .subscribe();
     }
   }

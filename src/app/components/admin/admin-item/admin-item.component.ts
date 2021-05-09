@@ -26,8 +26,7 @@ export class AdminItemComponent implements OnInit {
   deleteItem(){
     this.productService.deleteItemFromList(this.productItem).subscribe(()=>{
     });
-    this.router.navigate(['/shop']);
-    //TODO : change it to reload page
+    window.location.reload();
   }
 
   
