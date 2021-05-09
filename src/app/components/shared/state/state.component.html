@@ -5,7 +5,9 @@
 
 <table>
     <tr ng-repeat="x in names">
-      <td>Top 5 sel</td>
+        <td>5 Highest price item</td>
+        <td>Highest price item</td>
+        <td>Top 5 sel</td>
       <td>Top 5 unique sel</td>
       <td>past 5 days $</td>
     </tr>
@@ -13,27 +15,18 @@
         <td><div class="col-md-4" *ngFor="let product of productList">
             <app-state-items [productItem]= "product" ></app-state-items>
         </div></td>
-        <td><div class="col-md-4" *ngFor="let product of productList">
-            <app-state-items [productItem]= "product" ></app-state-items>
+        <td><div class="col-md-4" *ngFor="let product of maxProduct">
+             <app-state-items [productItem]= "product" ></app-state-items> 
         </div></td>
         <td><div class="col-md-4" *ngFor="let product of productList">
-            <app-state-items [productItem]= "product" ></app-state-items>
+            <!-- <app-state-items [productItem]= "product" ></app-state-items> -->
+        </div></td>
+        <td><div class="col-md-4" *ngFor="let product of productList">
+            <!-- <app-state-items [productItem]= "product" ></app-state-items> -->
+        </div></td>
+        <td><div class="col-md-4" *ngFor="let product of productList">
+            <!-- <app-state-items [productItem]= "product" ></app-state-items> -->
         </div></td>
         
     </tr>
   </table>
-<!-- 
-<div class="row">
-    <div class="col-md-4" *ngFor="let product of productList">
-        <app-state-items [productItem]= "product" ></app-state-items>
-    </div>
-
-    <div class="col-md-4" *ngFor="let product of productList">
-        <app-state-items [productItem]= "product" ></app-state-items>
-    </div>
-
-    <div class="col-md-4" *ngFor="let product of productList">
-        <app-state-items [productItem]= "product" ></app-state-items>
-    </div>
-</div>
-  -->

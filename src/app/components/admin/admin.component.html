@@ -49,7 +49,7 @@
             </div>
           
             <div class="modal-footer">
-                <button class="btn btn-primary btn-block"(click)="modal.close('Save click')">Add Item</button>    
+                <button class="btn btn-primary btn-block"[disabled]="registerForm.get('productname').invalid || registerForm.get('description').invalid  || registerForm.get('image').invalid || registerForm.get('price').invalid" (click)="modal.close('Save click')">Add Item</button>    
             </div>
         </form>
     </div>
