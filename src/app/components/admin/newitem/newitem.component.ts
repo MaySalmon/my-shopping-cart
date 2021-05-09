@@ -41,7 +41,7 @@ export class NewitemComponent implements OnInit {
     this.productService.addNewProduct(this.newItem).subscribe(() => {
       //  this.msg.sendMsg(this.newItem)
     })
-    this.router.navigate(['/shop']);
+     this.router.navigate(['/admin']);
   }
   
 }

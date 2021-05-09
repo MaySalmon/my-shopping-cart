@@ -34,11 +34,6 @@ export class EdititemComponent implements OnInit {
     })
    
   }
-
- 
-  
-      
- 
   
   fetchToLocal(data){
     this.clickedProduct.id = data.id;
@@ -62,7 +57,7 @@ export class EdititemComponent implements OnInit {
     this.clickedProduct.imageurl = this.registerForm.get('image').value;
     this.clickedProduct.price = this.registerForm.get('price').value;
     this.productService.updatePost( this.clickedProduct.id,this.clickedProduct);
-    this.router.navigate(['/shop']);
+    this.router.navigate(['/admin']);
   }
 }
 

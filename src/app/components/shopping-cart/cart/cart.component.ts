@@ -62,7 +62,8 @@ export class CartComponent implements OnInit {
 
   clearcart(){
     this.cartService.deleteCartItems();
-    this.router.navigate(['/']);
+    this.router.navigate(['/admin']);
+    //TODO: change to refresh page
   }
 
   
