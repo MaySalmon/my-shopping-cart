@@ -14,6 +14,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 Run json-server start  to run the jason server used in the project.
+then run 'json-server --watch db.json'
+
+refresh the home page in 'http://localhost:4200'
 
 ## Running unit tests
 
